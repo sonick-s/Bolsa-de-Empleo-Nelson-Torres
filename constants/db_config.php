@@ -1,6 +1,6 @@
 <?php
-$servername = "localhost";
+$servername = "207.244.242.219";
 $username = "root";
-$password = "";
-$dbname = "trabyrac";
+$password = "dxA9aj.4iZBmWy,)";
+$dbname = "job_board";
 ?>
