@@ -175,7 +175,7 @@ include 'constants/check-login.php';
 				<div class="container">
 
 					<h1>Agencia de empleo YAVIRAC</h1>
-					<p>Comprometidos con la inserción de los estudiantes, egresados y graduados al mercado laboral.</p>
+					<p>Comprometidos con la inserción de los estudiantes y graduados al mercado laboral.</p>
 
 					<div class="main-search-form-wrapper">
 					

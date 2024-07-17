@@ -47,7 +47,7 @@ $pdf->SetFont('Arial','B',8);
 $pdf->SetDrawColor(79,129,188);
 $pdf->SetFillColor(255,255,255);
 $pdf->SetTextColor(0,0,0);
-$pdf->Cell(0,9,''.$myemail. ', '.$mycountry.', '.$mycity.', '.$mystreet.'',1,1,'C',true);
+$pdf->Cell(0,9,''.$mygender.', '.$myemail.', '.$mycountry.','.$mycity.','.$mystreet.','.$myzip.'',1,1,'C',true);
 
 $pdf->Ln(4);
 
@@ -99,7 +99,7 @@ $pdf->SetFont('Arial','B',14);
 $pdf->SetDrawColor(184,204,229);
 $pdf->SetFillColor(184,204,229);
 $pdf->SetTextColor(0,0,0);
-$pdf->Cell(80,9,'Cursos y talleres',1,1,'L',true);
+$pdf->Cell(80,9,'Entrenamiento y Taller',1,1,'L',true);
 
 $pdf->SetDrawColor(255,255,255);
 $pdf->SetFillColor(255,255,255);
@@ -160,7 +160,7 @@ $pdf->SetFont('Arial','B',14);
 $pdf->SetDrawColor(184,204,229);
 $pdf->SetFillColor(184,204,229);
 $pdf->SetTextColor(0,0,0);
-$pdf->Cell(80,9,'Certificaciones',1,1,'L',true);
+$pdf->Cell(80,9,'Calificaciones Profesionales',1,1,'L',true);
 
 $pdf->SetDrawColor(255,255,255);
 $pdf->SetFillColor(255,255,255);
@@ -192,7 +192,7 @@ $pdf->SetFont('Arial','B',14);
 $pdf->SetDrawColor(184,204,229);
 $pdf->SetFillColor(184,204,229);
 $pdf->SetTextColor(0,0,0);
-$pdf->Cell(80,9,'Estudios',1,1,'L',true);
+$pdf->Cell(80,9,'Calificaciones Academicas',1,1,'L',true);
 
 $pdf->SetDrawColor(255,255,255);
 $pdf->SetFillColor(255,255,255);
