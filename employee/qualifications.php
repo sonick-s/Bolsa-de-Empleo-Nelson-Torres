@@ -322,7 +322,7 @@ $page = 1;
 									<div class="col-sm-12 col-md-12">
 												
 									<div class="form-group">
-									<label>Country</label>
+									<label>Pais</label>
 									<select name="country" required class="selectpicker show-tick form-control" data-live-search="true">
 									<option disabled value="">Seleccionar</option>
 										<?php
@@ -394,7 +394,7 @@ $page = 1;
 				                   </div>
 				                   <input type="hidden" name="courseid" value="<?php echo "$course_id"; ?>">
 				                   <div class="modal-footer text-center">
-				 	               <button type="submit" class="btn btn-primary">Submit</button>
+				 	               <button type="submit" class="btn btn-primary">Agregar</button>
 					               <button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Cerrar</button>
 				                   </div>
 				                   </form>
@@ -488,7 +488,7 @@ $page = 1;
 									<div class="col-sm-12 col-md-12">
 												
 									<div class="form-group">
-									<label>Country</label>
+									<label>Pais</label>
 									<select name="country" required class="selectpicker show-tick form-control" data-live-search="true">
 									<option disabled value="">Seleccionar</option>
 										<?php

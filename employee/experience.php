@@ -320,7 +320,7 @@ $page = 1;
 				                    </div>
 				
 				                    <div class="modal-body">
-									<b style="color:#990000">All fields with * are mandatory</b>
+									<b style="color:#990000">Todos los campos con * son obligatorios</b>
 									<form action="app/update-experience.php" method="POST" autocomplete="off" enctype="multipart/form-data">
 					                <div class="row gap-20">
 									

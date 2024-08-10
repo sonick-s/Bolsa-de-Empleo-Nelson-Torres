@@ -10,8 +10,8 @@ include 'constants/check-login.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TRABYRAC - Agencia de empleo</title>
-	<meta name="description" content="Agencia de empleo YAVIRAC" />
+	<title>EmpleaTec - Bolsa de Empleo</title>
+	<meta name="description" content="Bolsa de Empleo Instituto Nelson Torres" />
 	<meta name="keywords" content="trabajo, empleos, cv, curriculum, empresas, carrera, profesionales, tecnicos, bolsa de trabajo" />
 	<meta name="author" content="DieDay Soft.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -171,10 +171,10 @@ include 'constants/check-login.php';
 
 		<div class="main-wrapper">
 		
-			<div class="hero" style="background-image:url('images/hero-header/0.jpg');">
+			<div class="hero" style="background-image:url('images/hero-header/fondoRojo.jpg');">
 				<div class="container">
 
-					<h1>Agencia de empleo YAVIRAC</h1>
+					<h1>Bolsa de Empleo Instituto Nelson Torres</h1>
 					<p>Comprometidos con la inserción de los estudiantes y graduados al mercado laboral.</p>
 
 					<div class="main-search-form-wrapper">

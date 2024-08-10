@@ -376,7 +376,7 @@ $jobexpired = false;
 								<?php
 						        if ($user_online == true) {
 								if ($jobexpired == true) {
-								print '<button class="btn btn-primary disabled btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-calendar"></i> This job is expired</button>';
+								print '<button class="btn btn-primary disabled btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-calendar"></i> Esta vacante no esta disponible</button>';
 								}else{
 								if ($myrole == "employee") {
                                 print '<button';?> onclick="update(this.value)" <?php print ' value="'.$jobid.'" class="btn btn-primary btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-pencil"></i> Aplicar a esta vacante</button>';

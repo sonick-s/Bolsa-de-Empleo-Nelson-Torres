@@ -351,10 +351,7 @@ $page = 1;
 
 								   	<div class="col-sm-12 col-md-12">
 						
-							        <div class="form-group"> 
-								    <label>Adjuntar tu Certificado <b>*(Leave blank if you dont want to update)*</b></label>
-								    <input class="form-control" accept="application/pdf" type="file" name="certificate"> 
-							        </div>
+							       
 						
 						           </div>
 						
@@ -487,10 +484,7 @@ $page = 1;
 
 								   	<div class="col-sm-12 col-md-12">
 						
-							        <div class="form-group"> 
-								    <label>Adjuntar tu Certificado (optional)</label>
-								    <input class="form-control" accept="application/pdf" type="file" name="certificate"> 
-							        </div>
+							       
 						
 						           </div>
 						
