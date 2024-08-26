@@ -204,6 +204,7 @@ include 'constants/check-login.php';
 				</div>
 			
 			</div>
+			
 			<footer class="footer-wrapper">
 			
 				<div class="main-footer">
@@ -219,8 +220,10 @@ include 'constants/check-login.php';
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">Acerca TRABYRAC</h5>
-											<p>TRABYRAC es un portal dedicado a la insersión laboral de nuestros estudiantes.</p>
+											<h5 class="footer-title">Acerca EmpleaTec</h5>
+											<p>EmpleaTec es tu plataforma integral para la búsqueda de empleo y la gestión de talento.
+											 Diseñada especialmente para conectar a profesionales recién graduados y experimentados con
+											 las mejores oportunidades laborales.</p>
 										
 										</div>
 
@@ -229,10 +232,8 @@ include 'constants/check-login.php';
 									<div class="col-sm-6 col-md-5 mt-30-xs">
 										<h5 class="footer-title">Enlaces Rapidos</h5>
 										<ul class="footer-menu clearfix">
-											<li><a href="https://yavirac.edu.ec/">Web Yavirac</a></li>
-											<li><a href="https://eva.yavirac.edu.ec/">Aula Virtual (EVA)</a></li>
-											<li><a href="https://ignug.yavirac.edu.ec/">IGNUG</a></li>
-											<li><a href="https://yec.yavirac.edu.ec/">YEC</a></li>
+											<li><a href="http://eva.intsuperior.edu.ec/">Web Nelson Torres</a></li>
+											<li><a href="http://eva.intsuperior.edu.ec/login/index.php">Aula Virtual (EVA)</a></li>
 											<li><a href="http://siga.institutos.gob.ec:8080/siga-web/indice.jsf">SIGA</a></li>
 											<li><a href="#">Ir Arriba</a></li>
 
@@ -248,9 +249,9 @@ include 'constants/check-login.php';
 							
 								<h5 class="footer-title">Contacto</h5>
 								
-								<p>García Moreno S4-35 y Ambato</p>
-								<p><a href="mailto:info@yavirac.edu.ec">info@yavirac.edu.ec</a></p>
-								<p>Horario de atención: lunes a viernes, de 08H00 a 17H00</a></p>
+								<p>3V25+574 via Ayora, Cayambe</p>
+								<p><a href="mailto: secretaria@intsuperior.edu.ec">@Informacion Instituto Nelson Torres</a></p>
+								<p>Horario de atención: lunes a viernes, de 02H00 a 18H30</a></p>
 								
 
 							</div>
@@ -270,14 +271,14 @@ include 'constants/check-login.php';
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> YAVIRAC</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Omar Sani <br> Yorman Morillo</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Desarrollado por <a HREF="https://www.facebook.com/dieday.ec"> DieDay Soft. </a></li>
+									<li><a >Desarrollado por <a HREF="www.linkedin.com/in/omar-sani-b9733a2b9"> Sonick Soft. </a></li>
 								</ul>
 							
 							</div>

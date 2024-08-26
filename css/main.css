@@ -162,7 +162,7 @@ body {
     font-size: 14px;
     line-height: 25px;
     font-weight: 400;
-    color: #939393;
+    color: #000000;
     /* -webkit-font-smoothing: antialiased!important;
 	font-smoothing: antialiased!important; */
     background-color: #FFF;
@@ -2373,7 +2373,7 @@ section.sm,
 }
 
 .text-primary {
-    color: #33B6CB !important;
+    color: #000000 !important;
 }
 
 .text-info {
@@ -3023,8 +3023,8 @@ h6.heading {
 }
 
 .btn-primary {
-    background: #33B6CB;
-    border-color: #33B6CB;
+    background: #000000;
+    border-color: #000000;
     color: #FFF !important;
 }
 
@@ -3034,8 +3034,8 @@ h6.heading {
 }
 
 .btn-info {
-    background: #2E8ED7;
-    border-color: #2E8ED7;
+    background: #4bd40b;
+    border-color: #2a8500;
     color: #FFF !important;
 }
 
@@ -3119,8 +3119,8 @@ h6.heading {
 }
 
 .btn-primary.btn-inverse {
-    color: #33B6CB !important;
-    border-color: #33B6CB !important;
+    color: #BD0102 !important;
+    border-color: #BD0102 !important;
 }
 
 .btn-info.btn-inverse {
