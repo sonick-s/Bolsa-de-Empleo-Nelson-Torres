@@ -8,11 +8,13 @@
 -- Versión de PHP: 5.6.28
 
 
---///////////////////////////////////////////////////
+/*
+///////////////////////////////////////////////////
 
--- Crea Tablas bolsa de empleo
+ Crea Tablas bolsa de empleo
 
---//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+*/
 
 
 CREATE TABLE `tbl_academic_qualification` (
@@ -25,18 +27,18 @@ CREATE TABLE `tbl_academic_qualification` (
   `timeframe` varchar(255) NOT NULL,
   `certificate` longblob NOT NULL,
   `transcript` longblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_alerts` (
   `id` int(255) NOT NULL,
   `code` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_categories` (
   `id` int(255) NOT NULL,
-  `category` varchar(255) CHARACTER SET latin1 NOT NULL
+  `category` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_countries` (
@@ -55,7 +57,7 @@ CREATE TABLE `tbl_experience` (
   `start_date` varchar(255) NOT NULL,
   `end_date` varchar(255) NOT NULL,
   `duties` longtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_jobs` (
   `job_id` varchar(255) NOT NULL,
@@ -72,14 +74,14 @@ CREATE TABLE `tbl_jobs` (
   `date_posted` varchar(255) NOT NULL,
   `closing_date` varchar(255) NOT NULL,
   `enc_id` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_job_applications` (
   `id` int(255) NOT NULL,
   `member_no` varchar(255) NOT NULL,
   `job_id` varchar(255) NOT NULL,
   `application_date` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_language` (
   `id` int(255) NOT NULL,
@@ -88,7 +90,7 @@ CREATE TABLE `tbl_language` (
   `speak` varchar(255) NOT NULL,
   `reading` varchar(255) NOT NULL,
   `writing` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_other_attachments` (
   `id` int(255) NOT NULL,
@@ -96,7 +98,7 @@ CREATE TABLE `tbl_other_attachments` (
   `title` varchar(255) NOT NULL,
   `issuer` varchar(255) NOT NULL,
   `attachment` longblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_professional_qualification` (
   `id` int(255) NOT NULL,
@@ -106,7 +108,7 @@ CREATE TABLE `tbl_professional_qualification` (
   `title` varchar(255) NOT NULL,
   `timeframe` varchar(255) NOT NULL,
   `certificate` longblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_referees` (
   `id` int(255) NOT NULL,
@@ -116,13 +118,13 @@ CREATE TABLE `tbl_referees` (
   `ref_title` varchar(255) NOT NULL,
   `ref_phone` varchar(255) NOT NULL,
   `institution` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_tokens` (
   `id` int(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `token` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_training` (
   `id` int(255) NOT NULL,
@@ -131,7 +133,7 @@ CREATE TABLE `tbl_training` (
   `institution` varchar(255) NOT NULL,
   `timeframe` varchar(255) NOT NULL,
   `certificate` longblob
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tbl_users` (
   `first_name` varchar(255) NOT NULL,
@@ -158,7 +160,7 @@ CREATE TABLE `tbl_users` (
   `website` varchar(255) NOT NULL DEFAULT '-',
   `login` varchar(255) NOT NULL,
   `member_no` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Índices para tablas volcadas
@@ -258,67 +260,70 @@ ALTER TABLE `tbl_users`
 -- AUTO_INCREMENT de la tabla `tbl_academic_qualification`
 --
 ALTER TABLE `tbl_academic_qualification`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_alerts`
 --
 ALTER TABLE `tbl_alerts`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_categories`
 --
 ALTER TABLE `tbl_categories`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_countries`
 --
 ALTER TABLE `tbl_countries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=241;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_experience`
 --
 ALTER TABLE `tbl_experience`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT de la tabla `tbl_jobs`
---
-ALTER TABLE `tbl_jobs`
-  MODIFY `enc_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_job_applications`
 --
 ALTER TABLE `tbl_job_applications`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_language`
 --
 ALTER TABLE `tbl_language`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_other_attachments`
 --
 ALTER TABLE `tbl_other_attachments`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_professional_qualification`
 --
 ALTER TABLE `tbl_professional_qualification`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_referees`
 --
 ALTER TABLE `tbl_referees`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_tokens`
 --
 ALTER TABLE `tbl_tokens`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `tbl_training`
 --
 ALTER TABLE `tbl_training`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

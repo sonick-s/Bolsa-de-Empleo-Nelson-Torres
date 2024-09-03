@@ -155,6 +155,10 @@ header("location:./");
 							<li>
 								<a href="contact.php">Contacto</a>
 							</li>
+							
+							<li>
+								<a href="employee/notification.php">Notificaciones</a>
+							</li>
 
 						</ul>
 				
@@ -538,7 +542,7 @@ header("location:./");
 													
 												</ul>
 										
-										
+												
 										<h3>Referencias</h3>
 										<ul class="list-icon">
 												<?php
@@ -587,6 +591,7 @@ header("location:./");
 																
 											
 										</ul>
+										
 										
 									</div>
 

@@ -161,8 +161,8 @@ ul.nav-mini.sign-in li a {
 
 ul.nav-mini.sign-in li a:hover {
     color: #FFF;
-    background: #2991A2;
-    border-color: #2991A2;
+    background: #000000;
+    border-color: #ffffff;
 }
 
 .nav.navbar-nav {
@@ -5221,8 +5221,8 @@ ul.bottom-footer-menu.for-social li:after {
 }
 
 .admin-sidebar {
-    background: #EF1718;
-    border: 1px solid #000000;
+    background: #ffffff;
+    border: 1px solid #adadad;
     padding: 0;
     padding-top: 60px;
     margin-top: -51px;
@@ -5242,7 +5242,7 @@ ul.bottom-footer-menu.for-social li:after {
     width: 100px;
     margin: 0 auto 15px;
     border-radius: 50%;
-    border: 6px double #33B6CB;
+    border: 6px double #ffffff;
     padding: 2px;
 }
 
@@ -5814,7 +5814,7 @@ ul.static-page-menu li.active a {
 
 .login-box-wrapper .modal-header,
 .login-box-wrapper .modal-footer {
-    background: #d40000;
+    background: 0px 20px 40px rgba(0, 0, 0, 0.3), 0px 0px 30px rgba(255, 255, 255, 0.2);
 }
 
 .login-box-wrapper .modal-body {
@@ -5890,12 +5890,22 @@ ul.static-page-menu li.active a {
 }
 
 .login-container-wrapper .login-box-wrapper {
-    border: 1px solid #DDD;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.16);
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    background: linear-gradient(135deg, rgba(33,36,39,0.9), rgba(42,50,46,0.9)); /* Fondo degradado futurista */
+    -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25), 0px 0px 20px rgba(255, 255, 255, 0.1); /* Sombras flotantes 3D */
+    -moz-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25), 0px 0px 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25), 0px 0px 20px rgba(255, 255, 255, 0.1);
+    padding: 20px; /* Espaciado interior */
+    transform: translateY(-10px); /* Leve flotación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
 }
+
+.login-container-wrapper .login-box-wrapper:hover {
+    transform: translateY(-15px); /* Aumentar flotación al pasar el cursor */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3), 0px 0px 30px rgba(255, 255, 255, 0.2); /* Incrementar sombra en hover */
+}
+
 
 .modal.login-box-wrapper {
     width: 600px !important;

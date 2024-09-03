@@ -454,12 +454,18 @@ $page = 1;
 								    <input class="form-control" placeholder="Ingrese empresa que emite ek documento" type="text" name="issuer" required> 
 							        </div>
 						
-						           </div>
-								  
+									<!-- Campo para subir el archivo PDF -->
+									<form action="upload_script.php" method="POST" enctype="multipart/form-data">
+										<div class="col-sm-12 col-md-12">
+											<div class="form-group"> 
+												<label>Certificado en PDF</label>
+												<input type="file" name="certificate" accept=".pdf" class="form-control" />
+											</div>
+										</div>
+									
 
-								   
-						
-	
+						           </div>
+								   	
 						           </div>
 								   
 					               </div>
@@ -469,6 +475,7 @@ $page = 1;
 				 	               <button type="submit" class="btn btn-primary">Agregar</button>
 					               <button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Cerrar</button>
 				                   </div>
+								   </form>
 				                   </form>
 			                       </div>
 									

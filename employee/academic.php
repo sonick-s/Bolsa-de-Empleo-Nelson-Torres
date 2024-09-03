@@ -573,7 +573,18 @@ $page = 1;
 								    <input class="form-control" placeholder="Eg: 2015 To 2016" type="text" name="timeframe" required> 
 							        </div>
 						
-					               </div>
+									<!-- Campo para subir el archivo PDF -->
+									<form action="upload_script.php" method="POST" enctype="multipart/form-data">
+									<div class="col-sm-12 col-md-12">
+										<div class="form-group"> 
+											<label>Certificado en PDF</label>
+											<input type="file" name="certificate" name="transcript" accept=".pdf" class="form-control" />
+										</div>
+										<!-- <div class="form-group">
+											<label>Transcripción en PDF</label>
+											<input type="file" name="transcript" accept=".pdf" class="form-control" />
+										</div> -->
+									</div>
 				                   </div>
 				
 				                   <div class="modal-footer text-center">
@@ -581,6 +592,7 @@ $page = 1;
 					               <button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Cerrar</button>
 				                   </div>
 				                   </form>
+								</form>
 			                       </div>
 									
 								</div>

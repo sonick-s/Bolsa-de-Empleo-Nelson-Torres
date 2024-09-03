@@ -33,7 +33,7 @@ $page = 1;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TRABYRAC - Cursos y talleres</title>
+	<title>TRABYRAC - Referencias</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -123,6 +123,10 @@ $page = 1;
 							<li>
 								<a href="../contact.php">Contacto</a>
 							</li>
+                            
+							<li>
+								<a href="employee/notification.php">Notificaciones</a>
+							</li>
 
 						</ul>
 				
@@ -151,8 +155,8 @@ $page = 1;
 				<div class="container">
 				
 					<ol class="breadcrumb-list booking-step">
-						<li><a href="../">Bwire Jobs</a></li>
-						<li><span>Training</span></li>
+						<li><a href="../">platea21</a></li>
+						<li><span>Referencias</span></li>
 					</ol>
 					
 				</div>
@@ -210,14 +214,13 @@ $page = 1;
 										<li>
 											<a href="language.php"><i class="fa fa-language"></i> Dominio del Idioma</a>
 										</li>
-										<li class="active">
+										<li>
 											<a href="training.php"><i class="fa fa-gears"></i> Cursos y Talleres</a>
 										</li>
-
-										<li>
+										<li class="active">
 											<a href="referees.php"><i class="fa fa-users"></i> Referencias</a>
 										</li>
-										<li>
+										<li >
 											<a href="academic.php"><i class="fa fa-graduation-cap"></i> Estudios</a>
 										</li>
 										<li>
@@ -226,7 +229,7 @@ $page = 1;
 										<li>
 											<a href="attachments.php"><i class="fa fa-folder-open"></i> Otros Documentos Adjuntos</a>
 										</li>
-																				
+										
 										<li>
 											<a href="../logout.php"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
 										</li>
@@ -236,282 +239,40 @@ $page = 1;
 
 							</div>
 							
-							<div class="GridLex-col-9_sm-8_xs-12">
-							
-								<div class="admin-content-wrapper">
+                                    <!-- Contenido de la pagina -->
 
-									<div class="admin-section-title">
-									
-										<h2>Cursos y Talleres</h2>
-					
-										
-									</div>
-									
-									<div class="resume-list-wrapper">
-									<?php require 'constants/check_reply.php'; ?>
-									<?php
-									require '../constants/db_config.php';
-									try {
-                                    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-                                    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                                    $stmt = $conn->prepare("SELECT * FROM tbl_training WHERE member_no = '$myid' ORDER BY id LIMIT $page1,5");
-                                    $stmt->execute();
-                                    $result = $stmt->fetchAll();
+                            <div style="max-width: 400px; width: 90%; min-height: 150px; background-color: #333; border-radius: 12px; padding: 16px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); color: #f9f9f9; font-family: Arial, sans-serif; margin: 0 auto; position: relative;">
+                                <!-- Botón de eliminar -->
+                                <button onclick="this.parentElement.style.display='none';" style="position: absolute; top: 10px; right: 10px; background: none; border: none; color: #e74c3c; font-size: 18px; cursor: pointer;">
+                                    &times;
+                                </button>
 
-                                    foreach($result as $row)
-                                    {
-		                             $training = $row['training'];
-									 $institution = $row['institution'];
-									 $timeframe = $row['timeframe'];
-									 $train_id = $row['id'];
-									 $certificate = $row['certificate'];
-									 
-									 ?>
-									 									<div class="resume-list-item">
-										
-											<div class="row">
-											
-												<div class="col-sm-12 col-md-10">
-												
-													<div class="content">
-													
-														<a  <?php if ($certificate == "") { }else{ ?> target="_blank" href="view-certificate-b.php?id=<?php echo $row['id']; ?> <?php } ?>" >
+                                <!-- Contenedor de la notificación -->
+                                <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                                    <!-- Imagen de perfil -->
+                                    <div style="flex: 0 0 50px; margin-bottom: 10px;">
+                                        <img src="profile.jpg" alt="Profile Image" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #555;">
+                                    </div>
 
-															<div class="image">
-															<?php 
-										                    if ($myavatar == null) {
-									                    	print '<center><img src="../images/default.jpg" title="'.$myfname.'" alt="image" width="100" height="100" /></center>';
-										                    }else{
-										                    echo '<center><img alt="image" title="'.$myfname.'" width="100" height="100" src="data:image/jpeg;base64,'.base64_encode($myavatar).'"/></center>';	
-										                    }
-										                      ?>
-															</div>
-															
-															<h4><?php echo $row['training']; ?></h4>
-															
-															<div class="row">
-																<div class="col-sm-12 col-md-9">
-																	<i class="fa fa-building text-primary mr-5"></i><strong class="mr-10"><?php echo $row['institution']; ?></strong>.
-																</div>
-																<div class="col-sm-12 col-md-3 mt-10-sm">
-																	<i class="fa fa-calendar  text-primary mr-5"></i> <?php echo $row['timeframe']; ?>
-																</div>
-															</div>
+                                    <!-- Nombre del usuario y descripción del empleo -->
+                                    <div style="flex: 1; margin-left: 16px;">
+                                        <div style="font-size: 18px; font-weight: bold; color: #f1f1f1;">
+                                            Nombre del Usuario
+                                        </div>
+                                        <div style="font-size: 14px; color: #c2c2c2;">
+                                            Descripción del empleo al que postula
+                                        </div>
+                                    </div>
+                                </div>
 
-														</a>
-													
-													</div>
-												
-												</div>
-												
-												<div class="col-sm-12 col-md-2">
-													
-													<div class="resume-list-btn">
-													
-														<a data-toggle="modal" href="#edit<?php echo $row['id']; ?>" class="btn btn-primary btn-sm mb-5 mb-0-sm">Editar</a>
-									<a href="app/drop-training.php?id=<?php echo $row['id']; ?>" onclick = "return confirm('Are you sure you want to delete this training ?')" class="btn btn-primary btn-sm btn-inverse">Borrar</a>
-									<div id="edit<?php echo $row['id']; ?>" class="modal fade login-box-wrapper" tabindex="-1" data-width="550" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
-			
-				                    <div class="modal-header">
-					                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					                 <h4 class="modal-title text-center"><?php echo "$training"; ?></h4>
-				                    </div>
-				
-				                    <div class="modal-body">
-									<form action="app/update-training.php" method="POST" autocomplete="off" enctype="multipart/form-data">
-					                <div class="row gap-20">
-						
-									<div class="col-sm-12 col-md-12">
-				
-							        <div class="form-group"> 
-								    <label>Nombre del Curso/Taller</label>
-								    <input class="form-control" value="<?php echo "$training"; ?>" placeholder="Enter training name" type="text" name="training" required> 
-							        </div>
-						
-						             </div>
-
-						            <div class="col-sm-12 col-md-12">
-				
-							        <div class="form-group"> 
-								    <label>Nombre de la Institución</label>
-								    <input class="form-control" value="<?php echo "$institution"; ?>" placeholder="Ingresa Nombre de la Institución" type="text" name="institution" required> 
-							        </div>
-						
-						             </div>
-						
-								   
-								   	<div class="col-sm-12 col-md-12">
-						
-							        <div class="form-group"> 
-								    <label>Periodo de Tiempo</label>
-								    <input class="form-control" value="<?php echo "$timeframe"; ?>" placeholder="Eg: 2015 To 2016" type="text" name="timeframe" required> 
-							        </div>
-						
-									
-						           </div>
-
-								   	<div class="col-sm-12 col-md-12">
-						
-							       
-						
-						           </div>
-						
-					               </div>
-				                   </div>
-				                   <input type="hidden" name="trainingid" value="<?php echo $row['id']; ?>">
-				                   <div class="modal-footer text-center">
-				 	               <button type="submit" class="btn btn-primary">Agregar</button>
-					               <button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Cerrar</button>
-				                   </div>
-				                   </form>
-			                       </div>
-
-													</div>
-													
-	
-													
-												</div>
-												
-											</div>
-										
-										</div>
-										<?php
-
-	                                }
-
-					  
-	                                }catch(PDOException $e)
-                                    {
-
-                                    }
-	
-									
-									?>
-
-									<div class="pager-wrapper">
-								
-						            <ul class="pager-list">
-								<?php
-								$total_records = 0;
-								require '../constants/db_config.php';
-								try {
-                                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-                                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                                $stmt = $conn->prepare("SELECT * FROM tbl_training WHERE member_no = '$myid' ORDER BY id");
-                                $stmt->execute();
-                                $result = $stmt->fetchAll();
-
-                                foreach($result as $row)
-                                {
-                                $total_records++;
-
-	                            }
-
-                                }catch(PDOException $e)
-                                {
-
-                                }
-
-								$records = $total_records/5;
-                                $records = ceil($records);
-				                if ($records > 1 ) {
-								$prevpage = $page - 1;
-								$nextpage = $page + 1;
-								
-								print '<li class="paging-nav" '; if ($page == "1") { print 'class="disabled"'; } print '><a '; if ($page == "1") { print ''; } else { print 'href="training.php?page='.$prevpage.'"';} print '><i class="fa fa-chevron-left"></i></a></li>';
-					            for ($b=1;$b<=$records;$b++)
-                                 {
-                                 
-		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="training.php?page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
-                                 }	
-								 print '<li class="paging-nav"'; if ($page == $records) { print 'class="disabled"'; } print '><a '; if ($page == $records) { print ''; } else { print 'href="training.php?page='.$nextpage.'"';} print '><i class="fa fa-chevron-right"></i></a></li>';
-					             }
-
-								
-								?>
-
-						            </ul>	
-					
-					                </div>
-
-										
-		
-										
-									</div>
-									
-									<div class="mt-30">
-									
-										<a data-toggle="modal" href="#QualifModal" class="btn btn-primary btn-lg">Agregar Nuevo</a>
-										
-									</div>
-									<div id="QualifModal" class="modal fade login-box-wrapper" tabindex="-1" data-width="550" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
-			
-				                    <div class="modal-header">
-					                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					                 <h4 class="modal-title text-center">Cursos y Talleres</h4>
-				                    </div>
-				
-				                    <div class="modal-body">
-									<form action="app/add-training.php" method="POST" autocomplete="off" enctype="multipart/form-data">
-					                <div class="row gap-20">
-									
-									<div class="col-sm-12 col-md-12">
-				
-							        <div class="form-group"> 
-								    <label>Nombre del Curso/Taller</label>
-								    <input class="form-control" placeholder="Ingrese nombre de entrenamiento" type="text" name="training" required> 
-							        </div>
-						
-						             </div>
-
-						            <div class="col-sm-12 col-md-12">
-				
-							        <div class="form-group"> 
-								    <label>Nombre de la Institución</label>
-								    <input class="form-control" placeholder="Ingresa Nombre de la Institución" type="text" name="institution" required> 
-							        </div>
-						
-						             </div>
-						
-								   
-								   	<div class="col-sm-12 col-md-12">
-						
-							        <div class="form-group"> 
-								    <label>Periodo de Tiempo</label>
-								    <input class="form-control" placeholder="Ej: 2015 a 2016" type="text" name="timeframe" required> 
-							        </div>
-						
-									<!-- Campo para subir el archivo PDF -->
-									<form action="upload_script.php" method="POST" enctype="multipart/form-data">
-										<div class="col-sm-12 col-md-12">
-											<div class="form-group"> 
-												<label>Certificado en PDF</label>
-												<input type="file" name="certificate" accept=".pdf" class="form-control" />
-											</div>
-										</div>
-						           </div>
-
-								   	<div class="col-sm-12 col-md-12">
-						
-							       
-						
-						           </div>
-						
-					               </div>
-				                   </div>
-				
-				                   <div class="modal-footer text-center">
-				 	               <button type="submit" class="btn btn-primary">Agregar</button>
-					               <button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Cerrar</button>
-				                   </div>
-				                   </form>
-									</form>
-			                       </div>
-									
-								</div>
-
-							</div>
-							
+                                <!-- Botón para ver el perfil -->
+                                <div style="margin-top: 16px; text-align: right;">
+                                    <a href="#" style="background-color: #e74c3c; color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(231, 76, 60, 0.2); display: inline-block;">
+                                        Ver Perfil
+                                    </a>
+                                </div>
+                            </div>
+                            
 						</div>
 
 					</div>

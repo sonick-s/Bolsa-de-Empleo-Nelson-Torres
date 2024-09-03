@@ -13,7 +13,7 @@ include 'constants/check-login.php';
 	<title>EmpleaTec - Bolsa de Empleo</title>
 	<meta name="description" content="Bolsa de Empleo Instituto Nelson Torres" />
 	<meta name="keywords" content="trabajo, empleos, cv, curriculum, empresas, carrera, profesionales, tecnicos, bolsa de trabajo" />
-	<meta name="author" content="DieDay Soft.">
+	<meta name="author" content="Sonick Soft.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="http://<?php echo "$actual_link"; ?>/images/banner.jpg" />
     <meta property="og:image:secure_url" content="https://<?php echo "$actual_link"; ?>/images/banner.jpg" />
@@ -82,7 +82,7 @@ include 'constants/check-login.php';
 <body class="home">
 
 
-	<div id="introLoader" class="introLoading"></div>
+	<!-- <div id="introLoader" class="introLoading"></div>-->
 
 	<div class="container-wrapper">
 
@@ -123,6 +123,10 @@ include 'constants/check-login.php';
 							
 							<li>
 								<a href="contact.php">Contacto</a>
+							</li>
+							
+							<li>
+								<a href="employee/notification.php">Notificaciones</a>
 							</li>
 
 						</ul>
@@ -623,16 +627,22 @@ include 'constants/check-login.php';
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Desarrollado por <a href="www.linkedin.com/in/omar-sani-b9733a2b9"> Sonick Soft. </a></li>
+									<li><a >Desarrollado por <a href="https://www.linkedin.com/in/omar-sani-b9733a2b9"> Sonick Soft. </a></li>
 								</ul>
 							
 							</div>
 							<div class="col-sm-4 col-md-4">
-								<ul class="bottom-footer-menu for-social">
-									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
-								</ul>
+							<ul class="bottom-footer-menu for-social">
+							<li>
+								<a href="https://www.linkedin.com/in/omar-sani-b9733a2b9" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+									<img src="./css/images/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+								</a>
+							</li>
+
+							<li><a href="https://www.facebook.com/profile.php?id=100008210796106"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/omaralexander_sani/"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a></li>
+							</ul>
+
 							<div class="col-sm-4 col-md-4">
 								
 							</div>

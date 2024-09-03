@@ -8,13 +8,13 @@
 -- Versión de PHP: 5.6.28
 
 
-
---////////////////////////////////////////////////////////////
+/*
+////////////////////////////////////////////////////////////
 
 -- Volcado de datos para la tabla `tbl_academic_qualification`
 
---////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////
+*/
 INSERT INTO `tbl_academic_qualification` (`id`, `member_no`, `country`, `institution`, `course`, `level`, `timeframe`, `certificate`, `transcript`) VALUES
 (2, 'EM144695988', 'Ecuador', 'Universidad Israel', 'Ingeniero En Sistemas', 'Degree', '2015-2020', '', '');
 
