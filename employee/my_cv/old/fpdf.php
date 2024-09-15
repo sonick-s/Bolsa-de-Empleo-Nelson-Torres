@@ -231,9 +231,10 @@ function SetCompression($compress)
 
 function SetTitle($title, $isUTF8=false)
 {
-	// Title of document
-	$this->metadata['Title'] = $isUTF8 ? $title : utf8_encode($title);
+    // Title of document
+    $this->metadata['Title'] = $isUTF8 ? $title : mb_convert_encoding($title, 'UTF-8');
 }
+
 
 function SetAuthor($author, $isUTF8=false)
 {
@@ -1036,12 +1037,14 @@ function Output($dest='', $name='', $isUTF8=false)
 
 protected function _dochecks()
 {
-	// Check mbstring overloading
-	if(ini_get('mbstring.func_overload') & 2)
-		$this->Error('mbstring overloading must be disabled');
-	// Ensure runtime magic quotes are disabled
-	if(get_magic_quotes_runtime())
-		@set_magic_quotes_runtime(0);
+    // Check mbstring overloading
+    if (ini_get('mbstring.func_overload') & 2) {
+        $this->Error('mbstring overloading must be disabled');
+    }
+    // Ensure runtime magic quotes are disabled
+    if (function_exists('get_magic_quotes_runtime') && get_magic_quotes_runtime()) {
+        @set_magic_quotes_runtime(0);
+    }
 }
 
 protected function _checkoutput()

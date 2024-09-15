@@ -218,10 +218,10 @@ class HtmlParser {
     function setTextIndex ($index) {
         $this->iHtmlTextIndex = $index;
         if ($index >= $this->iHtmlTextLength) {
-            $this->iCurrentChar = -1;
+            $this->iCurrentChar = 0;
         }
         else {
-            $this->iCurrentChar = $this->iHtmlText{$index};
+            $this->iCurrentChar = $this->iHtmlText[$index];
         }
     }
 

@@ -226,7 +226,7 @@ h6,
 .h6 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    color: #ffffff;
+    color: #000000;
     font-weight: 400;
 }
 
@@ -254,7 +254,7 @@ h6 .small,
 .h4 .small,
 .h5 .small,
 .h6 .small {
-    color: #ebebeb
+    color: #000000
 }
 
 h1,
@@ -2516,7 +2516,7 @@ a.link-alt:hover {
 
 label {
     font-size: 15px;
-    color: #ffffff;
+    color: #000000;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     display: block;
@@ -3056,9 +3056,9 @@ h6.heading {
 }
 
 .btn-warning {
-    background: #EDBA39;
-    border-color: #EDBA39;
-    color: #FFF !important;
+    background: #ffffff;
+    border-color: #ff1c1c;
+    color: #000000 !important;
 }
 
 .btn-warning:hover {

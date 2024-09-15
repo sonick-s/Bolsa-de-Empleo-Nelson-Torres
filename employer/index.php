@@ -19,7 +19,7 @@ header("location:../");
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TRABYRAC - Perfil Empresa</title>
+	<title>EmpleaTec - Perfil Empresa</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="DieDay Soft.">
@@ -433,100 +433,7 @@ header("location:../");
 			
 			</div>
 
-			<footer class="footer-wrapper">
-			
-				<div class="main-footer">
-				
-					<div class="container">
-					
-						<div class="row">
-						
-							<div class="col-sm-12 col-md-9">
-							
-								<div class="row">
-								
-									<div class="col-sm-6 col-md-4">
-									
-										<div class="footer-about-us">
-											<h5 class="footer-title">Acerca TRABYRAC</h5>
-											<p>TRABYRAC es un portal dedicado a la insersión laboral de nuestros estudiantes.</p>
-										
-										</div>
-
-									</div>
-									
-									<div class="col-sm-6 col-md-5 mt-30-xs">
-										<h5 class="footer-title">Enlaces Rapidos</h5>
-										<ul class="footer-menu clearfix">
-											<li><a href="https://yavirac.edu.ec/">Web Yavirac</a></li>
-											<li><a href="https://eva.yavirac.edu.ec/">Aula Virtual (EVA)</a></li>
-											<li><a href="https://ignug.yavirac.edu.ec/">IGNUG</a></li>
-											<li><a href="https://yec.yavirac.edu.ec/">YEC</a></li>
-											<li><a href="http://siga.institutos.gob.ec:8080/siga-web/indice.jsf">SIGA</a></li>
-											<li><a href="#">Ir Arriba</a></li>
-
-										</ul>
-									
-									</div>
-
-								</div>
-
-							</div>
-							
-							<div class="col-sm-12 col-md-3 mt-30-sm">
-							
-								<h5 class="footer-title">Contacto</h5>
-								
-								<p>García Moreno S4-35 y Ambato</p>
-								<p><a href="mailto:info@yavirac.edu.ec">info@yavirac.edu.ec</a></p>
-								<p>Horario de atención: lunes a viernes, de 08H00 a 17H00</a></p>
-								
-
-							</div>
-
-							
-						</div>
-						
-					</div>
-					
-				</div>
-				
-				<div class="bottom-footer">
-				
-					<div class="container">
-					
-						<div class="row">
-						
-							<div class="col-sm-4 col-md-4">
-					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> YAVIRAC</p>
-								
-							</div>
-							
-							<div class="col-sm-4 col-md-4">
-							
-								<ul class="bottom-footer-menu">
-									<li><a >Desarrollado por <a HREF="https://www.facebook.com/dieday.ec"> DieDay Soft. </a></li>
-								</ul>
-							
-							</div>
-							<div class="col-sm-4 col-md-4">
-								<ul class="bottom-footer-menu for-social">
-									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
-								</ul>
-							<div class="col-sm-4 col-md-4">
-								
-							</div>
-						
-						</div>
-
-					</div>
-					
-				</div>
-			
-			</footer>
+			<?php include '../footer.php'; ?>
 			
 		</div>
 

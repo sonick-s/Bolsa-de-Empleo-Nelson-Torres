@@ -1,7 +1,6 @@
 /*------------------------------------------------------------------
 Project:        HaNgan
 Author:         Crenoveative
-URL:            http://crenoveative.com/ 
 Version:        1.0.0
 Created:        23/05/2016
 Last change:    23/05/2015
@@ -5242,7 +5241,7 @@ ul.bottom-footer-menu.for-social li:after {
     width: 100px;
     margin: 0 auto 15px;
     border-radius: 50%;
-    border: 6px double #ffffff;
+    border: 6px double #ff2121;
     padding: 2px;
 }
 
@@ -5283,7 +5282,7 @@ ul.admin-user-menu li {
 ul.admin-user-menu li a {
     display: block;
     font-weight: 400;
-    color: #ffffff;
+    color: #000000;
     line-height: 1.2;
     margin: 12px 0;
     position: relative;
@@ -5305,7 +5304,7 @@ ul.admin-user-menu li a:hover {
 
 ul.admin-user-menu li.active a {
     font-weight: 600;
-    color: #ffffff;
+    color: #000000;
 }
 
 .admin-section-title {

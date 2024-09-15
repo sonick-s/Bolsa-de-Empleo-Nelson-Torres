@@ -1,6 +1,6 @@
 <?php
 require '../constants/settings.php';
-date_default_timezone_set($default_timezone);
+//date_default_timezone_set($default_timezone);
 $apply_date = date('m/d/Y');
 
 session_start();

@@ -10,7 +10,7 @@ include 'constants/check-login.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TRABYRAC - Contáctanos</title>
+	<title>EmpleaTec - Bolsa de Empleo</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -23,7 +23,7 @@ include 'constants/check-login.php';
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/favicon.png">
+	<link rel="shortcut icon" href="images/Logo yavirac.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -51,7 +51,8 @@ include 'constants/check-login.php';
 
 	<div class="container-wrapper">
 
-		<header id="header">
+	<header id="header">
+
 			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
 
 				<div class="container">
@@ -102,8 +103,8 @@ include 'constants/check-login.php';
 							<li><a href="'.$myrole.'">Perfil</a></li>';
 						}else{
 						print '
-							<li><a href="login.php">ingresar</a></li>
-							<li><a data-toggle="modal" href="#registerModal">registrate</a></li>';						
+							<li><a href="login.php">Ingresar</a></li>
+							<li><a data-toggle="modal" href="#registerModal">Registrate</a></li>';						
 						}
 						
 						?>
@@ -117,11 +118,12 @@ include 'constants/check-login.php';
 				
 			</nav>
 
+			
 			<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
 			
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title text-center">Crea tu cuenta gratis</h4>
+					<h4 class="modal-title text-center">Regístrate</h4>
 				</div>
 				
 				<div class="modal-body">
@@ -129,10 +131,10 @@ include 'constants/check-login.php';
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Registro Empresa</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Registro Empresas</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Registro Personal</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Registro Personas</a>
 						</div>
 
 					</div>
@@ -144,7 +146,6 @@ include 'constants/check-login.php';
 				</div>
 				
 			</div>
-
 
 			
 		</header>
@@ -258,100 +259,7 @@ include 'constants/check-login.php';
 			</div>
 				
 			
-			<footer class="footer-wrapper">
-			
-				<div class="main-footer">
-				
-					<div class="container">
-					
-						<div class="row">
-						
-							<div class="col-sm-12 col-md-9">
-							
-								<div class="row">
-								
-									<div class="col-sm-6 col-md-4">
-									
-										<div class="footer-about-us">
-											<h5 class="footer-title">Acerca EmpleaTec</h5>
-											<p>EmpleaTec es tu plataforma integral para la búsqueda de empleo y la gestión de talento.
-											 Diseñada especialmente para conectar a profesionales recién graduados y experimentados con
-											 las mejores oportunidades laborales.</p>
-										
-										</div>
-
-									</div>
-									
-									<div class="col-sm-6 col-md-5 mt-30-xs">
-										<h5 class="footer-title">Enlaces Rapidos</h5>
-										<ul class="footer-menu clearfix">
-											<li><a href="http://eva.intsuperior.edu.ec/">Web Nelson Torres</a></li>
-											<li><a href="http://eva.intsuperior.edu.ec/login/index.php">Aula Virtual (EVA)</a></li>
-											<li><a href="http://siga.institutos.gob.ec:8080/siga-web/indice.jsf">SIGA</a></li>
-											<li><a href="#">Ir Arriba</a></li>
-
-										</ul>
-									
-									</div>
-
-								</div>
-
-							</div>
-							
-							<div class="col-sm-12 col-md-3 mt-30-sm">
-							
-								<h5 class="footer-title">Contacto</h5>
-								
-								<p>3V25+574 via Ayora, Cayambe</p>
-								<p><a href="mailto: secretaria@intsuperior.edu.ec">@Informacion Instituto Nelson Torres</a></p>
-								<p>Horario de atención: lunes a viernes, de 02H00 a 18H30</a></p>
-								
-
-							</div>
-
-							
-						</div>
-						
-					</div>
-					
-				</div>
-				
-				<div class="bottom-footer">
-				
-					<div class="container">
-					
-						<div class="row">
-						
-							<div class="col-sm-4 col-md-4">
-					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Omar Sani <br> Yorman Morillo</p>
-								
-							</div>
-							
-							<div class="col-sm-4 col-md-4">
-							
-								<ul class="bottom-footer-menu">
-									<li><a >Desarrollado por <a HREF="www.linkedin.com/in/omar-sani-b9733a2b9"> Sonick Soft. </a></li>
-								</ul>
-							
-							</div>
-							<div class="col-sm-4 col-md-4">
-								<ul class="bottom-footer-menu for-social">
-									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
-								</ul>
-							<div class="col-sm-4 col-md-4">
-								
-							</div>
-						
-						</div>
-
-					</div>
-					
-				</div>
-			
-			</footer>
+			<?php include 'footer.php'; ?>
 			
 		</div>
 
