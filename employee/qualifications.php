@@ -590,13 +590,12 @@ $page = 1;
 							        </div>
 						
 									<form action="upload_script.php" method="POST" enctype="multipart/form-data">
-										<div class="col-sm-12 col-md-12">
-											<div class="form-group"> 
-												<label>Certificado en PDF</label>
-												<input type="file" name="certificate" accept=".pdf" class="form-control" />
-											</div>
+									<div class="col-sm-12 col-md-12">
+										<div class="form-group">
+											<label>Certificado en PDF</label>
+											<input type="file" name="certificate" accept=".pdf" class="form-control" required>
 										</div>
-
+										</div>
 						           </div>
 
 								   	<div class="col-sm-12 col-md-12">

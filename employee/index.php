@@ -7,7 +7,7 @@ require 'constants/check-login.php';
 if ($user_online == "true") {
 if ($myrole == "employee") {
 }else{
-header("location:../");		
+header("location:../");	
 }
 }else{
 header("location:../");	

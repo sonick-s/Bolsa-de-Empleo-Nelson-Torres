@@ -617,7 +617,7 @@ $page = 1;
 									<div class="col-sm-12 col-md-12">
 										<div class="form-group"> 
 											<label>Certificado en PDF</label>
-											<input type="file" name="certificate" name="transcript" accept=".pdf" class="form-control" />
+											<input type="file" name="certificate" name="transcript" accept=".pdf" class="form-control" class="form-control" required/>
 										</div>
 										<!-- <div class="form-group">
 											<label>Transcripción en PDF</label>

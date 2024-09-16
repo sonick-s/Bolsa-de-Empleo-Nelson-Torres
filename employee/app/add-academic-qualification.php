@@ -6,7 +6,7 @@ $course = ucwords($_POST['course']);
 $institution = ucwords($_POST['institution']);
 $timeframe = ucwords($_POST['timeframe']);
 $certificate = addslashes(file_get_contents($_FILES['certificate']['tmp_name']));
-$transcript = addslashes(file_get_contents($_FILES['transcript']['tmp_name']));
+//$transcript = addslashes(file_get_contents($_FILES['transcript']['tmp_name']));
 $level  = $_POST['level'];
 
 if ($_FILES["certificate"]["size"] > 1000000) {
