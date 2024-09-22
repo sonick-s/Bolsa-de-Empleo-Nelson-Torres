@@ -104,25 +104,25 @@ include 'constants/check-login.php';
 						
 							<li>
 							
-								<a href="./">Inicio</a>
+							<a href="./" style="text-transform: uppercase;">INICIO</a>
 								
 							</li>
 							
 							<li>
-								<a href="job-list.php">Vacantes</a>
+								<a href="job-list.php" style="text-transform: uppercase;">VACANTES</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Empresas</a>
+								<a href="employers.php" style="text-transform: uppercase;">EMPRESAS</a>
 							</li>
 							
 							<li>
-								<a href="employees.php">Personas</a>
+								<a href="employees.php" style="text-transform: uppercase;">PERSONAS</a>
 							</li>
 							
 							<li>
-								<a href="contact.php">Contacto</a>
+								<a href="contact.php"style="text-transform: uppercase;">CONTACTO</a>
 							</li>
 
 						</ul>
@@ -187,7 +187,7 @@ include 'constants/check-login.php';
 
 		<div class="main-wrapper">
 		
-			<div class="hero" style="background-image:url('images/hero-header/FondoInt.jpg');">
+			<div class="hero" style="background-image:url('images/hero-header/intblanco3.jpg');">
 				<div class="container">
 
 					<h1>Bolsa de Empleo Instituto Nelson Torres</h1>
@@ -271,7 +271,7 @@ include 'constants/check-login.php';
 							</div>
 							
 							<div class="btn-holder">
-								<button name="search" value="✓" type="submit" class="btn"><i class="ion-android-search"></i></button>
+								<button name="search" value="✓" type="submit" class="btn"><i class="ion-android-search" style="color: #595959;"></i></button>
 							</div>
 						
 						</form>

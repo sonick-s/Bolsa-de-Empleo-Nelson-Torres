@@ -81,25 +81,25 @@ header("location:../");
 						
 							<li>
 							
-								<a href="./">Inicio</a>
+								<a href="./" style="text-transform: uppercase;">Inicio</a>
 								
 							</li>
 							
 							<li>
-								<a href="job-list.php">Vacantes</a>
+								<a href="job-list.php" style="text-transform: uppercase;">Vacantes</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Empresas</a>
+								<a href="employers.php" style="text-transform: uppercase;">Empresas</a>
 							</li>
 							
 							<li>
-								<a href="employees.php">Personas</a>
+								<a href="employees.php" style="text-transform: uppercase;">Personas</a>
 							</li>
 							
 							<li>
-								<a href="contact.php">Contacto</a>
+								<a href="contact.php" style="text-transform: uppercase;">Contacto</a>
 							</li>
 
 						</ul>
@@ -111,7 +111,7 @@ header("location:../");
 						<?php
 						if ($user_online == true) {
 						print '
-						    <li><a href="logout.php">Cerrar Sesión</a></li>
+						    <li><a href="../logout.php">Cerrar Sesión</a></li>
 							<li><a href="'.$myrole.'">Perfil</a></li>';
 						}else{
 						print '

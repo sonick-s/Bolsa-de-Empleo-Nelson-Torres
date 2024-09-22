@@ -3029,8 +3029,8 @@ h6.heading {
 }
 
 .btn-primary:hover {
-    background: #2991A2;
-    border-color: #2991A2;
+    color: #FFF !important;
+    background: #000000;
 }
 
 .btn-info {
@@ -3040,8 +3040,8 @@ h6.heading {
 }
 
 .btn-info:hover {
-    background: #4477B2;
-    border-color: #4477B2;
+    color: #FFF !important;
+  background: #000000;
 }
 
 .btn-success {
@@ -3062,8 +3062,8 @@ h6.heading {
 }
 
 .btn-warning:hover {
-    background: #EDC868;
-    border-color: #EDC868;
+    color: #FFF !important;
+    background: #000000;
 }
 
 .btn-danger {

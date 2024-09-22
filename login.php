@@ -110,25 +110,25 @@ include 'constants/check-login.php';
 						
 							<li>
 							
-								<a href="./">Inicio</a>
+								<a href="./"  style="text-transform: uppercase;">Inicio</a>
 								
 							</li>
 							
 							<li>
-								<a href="job-list.php">Vacantes</a>
+								<a href="job-list.php"  style="text-transform: uppercase;">Vacantes</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Empresas</a>
+								<a href="employers.php"  style="text-transform: uppercase;">Empresas</a>
 							</li>
 							
 							<li>
-								<a href="employees.php">Personas</a>
+								<a href="employees.php"  style="text-transform: uppercase;">Personas</a>
 							</li>
 							
 							<li>
-								<a href="contact.php">Contacto</a>
+								<a href="contact.php"  style="text-transform: uppercase;">Contacto</a>
 							</li>
 
 						</ul>
@@ -227,7 +227,7 @@ include 'constants/check-login.php';
                                 <div class="login-box-wrapper">
 							
                                 <div class="modal-header">
-                                <h4 class="modal-title text-center">Ingresa a tu cuenta</h4>
+                                <h4 class="modal-title text-center" style="color: white; text-transform: uppercase;">Ingresa a tu cuenta</h4>
                                 </div>
 
                                 <div class="modal-body">
@@ -238,7 +238,8 @@ include 'constants/check-login.php';
                                 <div class="col-sm-12 col-md-12">
 
                                 <div class="form-group"> 
-                                <label>Correo Electrónico</label>
+
+                                <label style="color: white;">Correo Electrónico</label>
                                 <input class="form-control" placeholder="Ingresa tu Correo Electrónico" name="email" required type="text"> 
                                 </div>
 												
@@ -247,7 +248,7 @@ include 'constants/check-login.php';
                                 <div class="col-sm-12 col-md-12">
 												
                                 <div class="form-group"> 
-                                <label>Contraseña</label>
+                                <label style="color: white;" >Contraseña</label>
                                 <input class="form-control" placeholder="Ingresa tu contraseña" name="password" required type="password"> 
                                 </div>
 												

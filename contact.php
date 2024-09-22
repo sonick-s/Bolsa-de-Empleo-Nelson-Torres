@@ -69,25 +69,25 @@ include 'constants/check-login.php';
 						
 							<li>
 							
-								<a href="./">Inicio</a>
+								<a href="./" style="text-transform: uppercase;">Inicio</a>
 								
 							</li>
 							
 							<li>
-								<a href="job-list.php">Vacantes</a>
+								<a href="job-list.php" style="text-transform: uppercase;">Vacantes</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Empresas</a>
+								<a href="employers.php" style="text-transform: uppercase;">Empresas</a>
 							</li>
 							
 							<li>
-								<a href="employees.php">Personas</a>
+								<a href="employees.php" style="text-transform: uppercase;">Personas</a>
 							</li>
 							
 							<li>
-								<a href="contact.php">Contacto</a>
+								<a href="contact.php" style="text-transform: uppercase;">Contacto</a>
 							</li>
 
 						</ul>
@@ -238,10 +238,10 @@ include 'constants/check-login.php';
 							<ul class="address-list">
 								<li>
 										<h5>Dirección</h5>
-										<address>García Moreno E4-35 y Ambato, <br/>Quito - Ecuador <br/> </address>
+										<address>3V25,574 via Ayora, Cayambe, <br/>Cayambe - Ecuador <br/> </address>
 								</li>
 								<li>
-										<h5>Correo Electrónico</h5><a href="mailto:info@yavirac.edu.ec">info@yavirac.edu.ec</a>
+										<h5>Correo Electrónico</h5><a href="mailto:info@yavirac.edu.ec">info@intsuperior.edu.ec</a>
 								</li>
 								<li>
 										

@@ -289,7 +289,7 @@ ul.nav-mini.sign-in li a:hover {
 .navbar-nav > li.dropdown.active > a:hover,
 .navbar-nav > li:hover > a,
 .navbar-nav > li.active > a {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color:  rgba(255, 47, 47, 0.8) !important;
     background: transparent !important;
 }
 
@@ -512,7 +512,7 @@ ul.nav-mini li a {
 }
 
 .hero h1 {
-    color: #FFF;
+    color: #262626;
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -521,7 +521,7 @@ ul.nav-mini li a {
 }
 
 .hero p {
-    color: #FFF;
+    color: #595959;
     text-align: center;
     font-size: 27px;
     margin: 44px 0 65px;
@@ -628,14 +628,14 @@ ul.nav-mini li a {
     width: 55%;
     margin: 0 auto;
     position: relative;
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(87, 87, 87, 0.9);
     border-radius: 50px;
     padding: 0 20px;
 }
 
 .main-search-form-wrapper .form-control {
     background: none;
-    color: #ffffff;
+    color: #000000;
     border: 0;
     border-radius: 0;
     padding: 12px 0;
@@ -3153,7 +3153,7 @@ ul.pager-list.pull-right li {
  */
 
 .recent-job-wrapper {
-    border: 1px solid #CCC;
+    border: 1px solid #808080;
     border-radius: 3px;
 }
 
@@ -3254,7 +3254,7 @@ a.recent-job-item:hover {
 }
 
 .alt-stripe .recent-job-item:hover {
-    background: #EEE;
+    background: #FFF;
 }
 
 .job-item-list {
@@ -3975,7 +3975,7 @@ ul.meta-list li span {
 
 .top-company-wrapper.with-bg .top-company {
     background: #EDF2F2;
-    border-radius: 3px;
+    border-radius: 12px;
     padding: 35px 20px 25px;
 }
 
@@ -4323,7 +4323,7 @@ ul.company-directory-list.col-5 li {
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
-    border: 6px double #33B6CB;
+    border: 6px double #5151517d;
     padding: 3px;
     border-radius: 50%;
 }
@@ -4383,7 +4383,7 @@ ul.company-directory-list.col-5 li {
 .employee-detail-header .image {
     width: 130px;
     margin: 0 auto 20px;
-    border: 6px double #33B6CB;
+    border: 6px double #5151517d;
     padding: 5px;
     border-radius: 50%;
 }
@@ -5038,7 +5038,7 @@ ul.work-expereince-interest li .icon {
  */
 
 .main-footer {
-    background: #EF1718;
+    background: #333333;
     padding-top: 60px;
     padding-bottom: 50px;
     color: rgb(255 255 255 / 50%);
@@ -5053,7 +5053,7 @@ ul.work-expereince-interest li .icon {
 }
 
 .main-footer a:hover {
-    color: #2991A2;
+    color: #ea0000bd;
 }
 
 h5.footer-title {
@@ -5139,7 +5139,7 @@ ul.footer-menu li {
 }
 
 .bottom-footer a:hover {
-    color: #2991A2;
+    color: #a22929ea;
 }
 
 ul.bottom-footer-menu {
@@ -5241,7 +5241,7 @@ ul.bottom-footer-menu.for-social li:after {
     width: 100px;
     margin: 0 auto 15px;
     border-radius: 50%;
-    border: 6px double #ff2121;
+    border: 6px double #5151517d;
     padding: 2px;
 }
 
@@ -5298,7 +5298,7 @@ ul.admin-user-menu li a i {
 }
 
 ul.admin-user-menu li a:hover {
-    color: #feffff;
+    color: #ea0000bd;
     padding-left: 25px;
 }
 
@@ -5872,7 +5872,7 @@ ul.static-page-menu li.active a {
 }
 
 .btn-facebook {
-    background: #3b5998;
+    background: #000000a3;
 }
 
 .btn-google-plus {

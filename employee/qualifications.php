@@ -132,7 +132,7 @@ $page = 1;
 						<?php
 						if ($user_online == true) {
 						print '
-						    <li><a href="logout.php">Cerrar Sesión</a></li>
+						    <li><a href="../logout.php">Cerrar Sesión</a></li>
 							<li><a href="./">Perfil</a></li>';
 						}else{
 						print '
