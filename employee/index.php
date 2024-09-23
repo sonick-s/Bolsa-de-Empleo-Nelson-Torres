@@ -213,7 +213,7 @@ header("location:../");
 									
 									<div class="admin-user-action text-center">
 									
-										<a target="_blank" href="my_cv/old/index.php" class="btn btn-primary btn-sm btn-inverse">VER MI CV</a>
+										<a target="_blank" href="my_cv/index.php" class="btn btn-primary btn-sm btn-inverse">VER MI CV</a>
 										
 									</div>
 									
