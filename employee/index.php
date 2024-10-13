@@ -216,6 +216,12 @@ header("location:../");
 										<a target="_blank" href="my_cv/index.php" class="btn btn-primary btn-sm btn-inverse">VER MI CV</a>
 										
 									</div>
+
+									<div class="admin-user-action text-center">
+									
+										<a target="_blank" href="cert" class="btn btn-primary btn-sm btn-inverse">CERTIFICADO DE REGISTRO</a>
+										
+									</div>
 									
 									<ul class="admin-user-menu clearfix">
 										<li  class="active">

@@ -323,12 +323,15 @@ header("location:./");
 	                                            }catch(PDOException $e)
                                                 {
 
-                                                 } ?>
-
-										
+                                                 }
+												 
+												 ?>
 													
 												</ul>
-												
+
+												<!-- Botón para mostrar las calificaciones académicas -->
+												<button type="button" class="btn btn-primary" onclick="window.location.href='dowload/DowloadCertificate.php?empid=<?php echo $empid; ?>'">Mostrar Calificaciones</button>
+
 											</div>
 											
 
@@ -420,7 +423,7 @@ header("location:./");
 
                                                  } ?>
 
-										
+												<button type="button" class="btn btn-primary">Certificacion</button>
 													
 												</ul>
 										
@@ -459,8 +462,9 @@ header("location:./");
 
                                                  } ?>
 										
-													
-												</ul>
+												<button type="button" class="btn btn-primary">Certificacion</button>
+												
+											</ul>
 												
 												
 											<h3>Otra Documentación</h3>
@@ -498,7 +502,7 @@ header("location:./");
                                                  } ?>
 										
 										
-													
+												 <button type="button" class="btn btn-primary">Certificacion</button>
 												</ul>
 										
 										

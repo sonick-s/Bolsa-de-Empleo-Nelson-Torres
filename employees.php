@@ -220,7 +220,7 @@ $page = 1;
                             {
 								$empavatar = $row['avatar'];
 								?>
-																<div class="GridLex-col-3_sm-4_xs-6_xss-12">
+								<div class="GridLex-col-3_sm-4_xs-6_xss-12">
 								
 									<div class="employee-grid-item">
 									
