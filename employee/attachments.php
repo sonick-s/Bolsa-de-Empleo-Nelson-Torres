@@ -494,12 +494,16 @@ $page = 1;
 						
 									<!-- Campo para subir el archivo PDF -->
 									<form action="upload_script.php" method="POST" enctype="multipart/form-data">
-										<div class="col-sm-12 col-md-12">
-											<div class="form-group"> 
-												<label>Certificado en PDF</label>
-												<input type="file" name="certificate" accept=".pdf" class="form-control" class="form-control" required />
-											</div>
+									<div class="col-sm-12 col-md-12">
+										<div class="form-group"> 
+											<label>Certificado en PDF</label>
+											<input type="file" name="certificate" name="transcript" accept=".pdf" class="form-control" class="form-control" required/>
 										</div>
+										<!-- <div class="form-group">
+											<label>Transcripción en PDF</label>
+											<input type="file" name="transcript" accept=".pdf" class="form-control" />
+										</div> -->
+									</div>
 									
 
 						           </div>

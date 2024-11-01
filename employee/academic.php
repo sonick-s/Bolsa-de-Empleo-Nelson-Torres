@@ -631,7 +631,7 @@ $page = 1;
 					               <button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Cerrar</button>
 				                   </div>
 				                   </form>
-								</form>
+								
 			                       </div>
 									
 								</div>
@@ -646,10 +646,10 @@ $page = 1;
 			
 			</div>
 
-			<?php include '../footer.php'; ?>
+			
 			
 		</div>
-
+		<?php include '../footer.php'; ?>
 
 	</div>
  

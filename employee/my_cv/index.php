@@ -55,9 +55,9 @@ $pdf->SetFont('Arial','B',14);
 $pdf->SetDrawColor(211,211,211);
 $pdf->SetFillColor(211,211,211);
 $pdf->SetTextColor(0,0,0);
-$pdf->Cell(80,9,'Resumen Profesional',1,1,'L',true);
+$pdf->Cell(0,9,iconv('UTF-8', 'ISO-8859-1//TRANSLIT', ''.$myfname.' '.$mylname.''),1,1,'C',true);
 $pdf->SetFont('Arial','',11);
-$pdf->WriteHTML("<br>$mydesc <br><br>");
+$pdf->WriteHTML(iconv('UTF-8', 'ISO-8859-1//TRANSLIT', "<br>$mydesc <br><br>"));
 
 
 $pdf->Ln(4);

@@ -258,6 +258,9 @@ header("location:./");
 									
 										<p class="location"><i class="fa fa-map-marker"></i> <?php echo "$mycountry"; ?>, <?php echo "$mycity"; ?><span class="mh-5">|</span> <i class="fa fa-phone"></i> <?php echo "$myphone"; ?></p>
 										
+										<li>
+											<button type="button" class="btn btn-primary" onclick="window.location.href='dowload/DowloadCertificate.php?empid=<?php echo $empid; ?>'">Descargar Certificaciones </button>
+										</li>
 										
 										<ul class="meta-list clearfix">
 											<li>
@@ -313,7 +316,8 @@ header("location:./");
 												<li>
 												<h5><?php echo $row['course']; ?> </h5>
 												<p class="text-muted font-italic">Nivel - <?php echo $row['level']; ?> , <?php echo $row['timeframe']; ?><span class="font600 text-primary"> <?php echo $row['institution']; ?></span> <?php echo $row['country']; ?>
-												</li>
+												
+											</li>
 												<?php
 	                                            }
 	
@@ -329,9 +333,7 @@ header("location:./");
 													
 												</ul>
 
-												<!-- Botón para mostrar las calificaciones académicas -->
-												<button type="button" class="btn btn-primary" onclick="window.location.href='dowload/DowloadCertificate.php?empid=<?php echo $empid; ?>'">Mostrar Calificaciones</button>
-
+												
 											</div>
 											
 
@@ -402,6 +404,7 @@ header("location:./");
 												<li>
 												<h5><?php echo $row['training']; ?> </h5>
 												<p class="text-muted font-italic"><span class="font600 text-primary"> <?php echo $row['institution']; ?></span> <?php echo $row['timeframe']; ?></p>
+												</li>
 												<?php
 												if ($certificate == "") {
 													
@@ -411,7 +414,7 @@ header("location:./");
 												
 												?>
 												
-												</li>
+												
 												<?php
 	                                            }
 	
@@ -423,8 +426,6 @@ header("location:./");
 
                                                  } ?>
 
-												<button type="button" class="btn btn-primary">Certificacion</button>
-													
 												</ul>
 										
 										<h3>Certificaciones Profesionales</h3>
@@ -446,11 +447,14 @@ header("location:./");
                                                 foreach($result as $row)
                                                 {
 													$certificate = $row['certificate'];
+													
                                                 ?>
 											    <li>
 												<h5><?php echo $row['title']; ?> </h5>
 												<p class="text-muted font-italic"><?php echo $row['timeframe']; ?><span class="font600 text-primary"> <?php echo $row['institution']; ?></span> <?php echo $row['country']; ?>
-												</li>
+											 
+											</li>
+												
 												<?php
 	                                            }
 	
@@ -462,7 +466,6 @@ header("location:./");
 
                                                  } ?>
 										
-												<button type="button" class="btn btn-primary">Certificacion</button>
 												
 											</ul>
 												
@@ -489,7 +492,9 @@ header("location:./");
 												<li>
 												<h5><?php echo $row['title']; ?> </h5>
 												<p class="font600 text-primary"><?php echo $row['issuer']; ?>
-												</li>
+											
+											</li>
+												 
 												<?php
 	                                            }
 	
@@ -501,9 +506,8 @@ header("location:./");
 
                                                  } ?>
 										
-										
-												 <button type="button" class="btn btn-primary">Certificacion</button>
-												</ul>
+												
+									</ul>
 										
 										
 										<h3>Dominio del Idioma</h3>

@@ -1,53 +1,103 @@
 <?php
-    require '../constants/settings.php'; 
-    require '../constants/check-login.php';
-    require '../constants/db_config.php';
+require '../constants/settings.php'; 
+require '../constants/check-login.php';
+require '../constants/db_config.php';
 
-    if (isset($_GET['empid'])) {
-        $empid = $_GET['empid'];
+if (isset($_GET['empid'])) {
+    $empid = $_GET['empid'];
 
-        try {
-            // Conectamos a la base de datos usando PDO
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    try {
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            // Preparamos la consulta para obtener el certificado en formato binario
-            $stmt = $conn->prepare("SELECT certificate FROM tbl_academic_qualification WHERE member_no = :empid");
-            $stmt->bindParam(':empid', $empid);
-            $stmt->execute();
+        // Array para almacenar PDFs convertidos
+        $pdfFiles = [];
+        $index = 0;
 
-            // Verificamos si hay resultados
-            if ($stmt->rowCount() > 0) {
-                $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                $certificate = $row['certificate'];
-
-                // Si el certificado está en formato binario
-                if ($certificate) {
-                    // Definimos el nombre del archivo PDF a descargar
-                    $pdfFileName = "certificado_$empid.pdf";
-
-                    // Establecemos los encabezados para la descarga del PDF
-                    header('Content-Type: application/pdf');
-                    header('Content-Disposition: attachment; filename="' . $pdfFileName . '"');
-                    header('Content-Length: ' . strlen($certificate));
-
-                    // Limpiamos el búfer de salida para evitar contenido adicional
-                    ob_clean();
-                    flush();
-
-                    // Enviamos el contenido binario del certificado al navegador para su descarga
-                    echo $certificate;
-                    exit; // Detenemos el script después de la descarga
-                } else {
-                    echo "No se encontró el contenido del certificado.";
-                }
-            } else {
-                echo "No se encontraron certificaciones para el miembro especificado.";
-            }
-        } catch (PDOException $e) {
-            echo "Error: " . $e->getMessage();
+        // Consulta para obtener certificados académicos
+        $stmt = $conn->prepare("SELECT certificate FROM tbl_academic_qualification WHERE member_no = :empid");
+        $stmt->bindParam(':empid', $empid);
+        $stmt->execute();
+        
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $binaryData = $row['certificate'];
+            $pdfFileName = "certificado_academico_" . $empid . "_" . $index . ".pdf";
+            file_put_contents($pdfFileName, $binaryData);
+            $pdfFiles[] = $pdfFileName;
+            $index++;
         }
-    } else {
-        header("location:./");	
+
+        // Consulta para obtener certificados de capacitación
+        $stmt = $conn->prepare("SELECT certificate FROM tbl_training WHERE member_no = :empid");
+        $stmt->bindParam(':empid', $empid);
+        $stmt->execute();
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $binaryData = $row['certificate'];
+            $pdfFileName = "certificado_capacitacion_" . $empid . "_" . $index . ".pdf";
+            file_put_contents($pdfFileName, $binaryData);
+            $pdfFiles[] = $pdfFileName;
+            $index++;
+        }
+
+        // Consulta para obtener certificados de calificación profesional
+        $stmt = $conn->prepare("SELECT certificate FROM tbl_professional_qualification WHERE member_no = :empid");
+        $stmt->bindParam(':empid', $empid);
+        $stmt->execute();
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $binaryData = $row['certificate'];
+            $pdfFileName = "certificado_profesional_" . $empid . "_" . $index . ".pdf";
+            file_put_contents($pdfFileName, $binaryData);
+            $pdfFiles[] = $pdfFileName;
+            $index++;
+        }
+
+        // Consulta para obtener otros archivos adjuntos
+        $stmt = $conn->prepare("SELECT attachment FROM tbl_other_attachments WHERE member_no = :empid");
+        $stmt->bindParam(':empid', $empid);
+        $stmt->execute();
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $binaryData = $row['attachment'];
+            $pdfFileName = "adjunto_" . $empid . "_" . $index . ".pdf";
+            file_put_contents($pdfFileName, $binaryData);
+            $pdfFiles[] = $pdfFileName;
+            $index++;
+        }
+
+        // Crear el archivo .zip
+        $zipFileName = "certificados_$empid.zip";
+        $zip = new ZipArchive;
+
+        if ($zip->open($zipFileName, ZipArchive::CREATE) === TRUE) {
+            foreach ($pdfFiles as $pdfFile) {
+                $zip->addFile($pdfFile, basename($pdfFile));
+            }
+            $zip->close();
+
+            // Eliminar los archivos PDF temporales
+            foreach ($pdfFiles as $pdfFile) {
+                unlink($pdfFile);
+            }
+
+            // Enviar el archivo .zip para su descarga
+            header('Content-Type: application/zip');
+            header('Content-Disposition: attachment; filename="' . $zipFileName . '"');
+            header('Content-Length: ' . filesize($zipFileName));
+
+            readfile($zipFileName);
+
+            // Eliminar el archivo .zip temporal después de enviarlo
+            unlink($zipFileName);
+            exit;
+        } else {
+            echo "Error al crear el archivo .zip.";
+        }
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
     }
+} else {
+    header("location:./");	
+}
 ?>
