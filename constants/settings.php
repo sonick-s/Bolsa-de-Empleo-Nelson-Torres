@@ -2,8 +2,8 @@
 $actual_link = $_SERVER['HTTP_HOST'];
 
 // Definir la zona horaria (opcional, pero recomendable)
-$default_timezone = ''; // Ajusta la zona horaria según tu ubicación
-date_default_timezone_set($default_timezone);
+//$default_timezone = ''; // Ajusta la zona horaria según tu ubicación
+//date_default_timezone_set($default_timezone);
 
 // Configuración de SMTP para Gmail
 $smtp_host = '';   // El servidor SMTP de Gmail

@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Africa/Dar_es_salaam');
 $last_login = date('d-m-Y h:m A [T P]');
-require 'C:\wamp64\www\System\constants\db_config.php';
+require '..\constants\db_config.php';
 $myemail = $_POST['email'];
 $mypass = md5($_POST['password']);
 
