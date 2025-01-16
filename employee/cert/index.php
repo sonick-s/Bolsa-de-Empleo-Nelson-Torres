@@ -1,6 +1,6 @@
 <?php
 require('html_table.php');
-require '../.././constants/db_config.php';
+require '../../constants/db_config.php';
 require '../constants/check-login.php';
 
 if ($user_online == "true") {
@@ -61,7 +61,7 @@ $pdf->Ln(20);
 // Centrando la imagen del logo
 $imageWidth = 40;
 $centerX = ($pdf->GetPageWidth() - $imageWidth) / 2;
-$pdf->Image('logo.png', $centerX, 0, $imageWidth, 35);
+$pdf->Image('Logo.png', $centerX, 0, $imageWidth, 35);
 
 $pdf->SetTitle(''.$myfname.' '.$mylname.' CV');
 $pdf->SetFont('Arial', 'B', 25);

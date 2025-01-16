@@ -464,7 +464,7 @@ CREATE TABLE IF NOT EXISTS `tbl_jobs` (
   `company` varchar(255) NOT NULL,
   `date_posted` varchar(255) NOT NULL,
   `closing_date` varchar(255) NOT NULL,
-  `enc_id` int NOT NULL,
+  `enc_id` int  NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`enc_id`),
   UNIQUE KEY `job_id` (`job_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;

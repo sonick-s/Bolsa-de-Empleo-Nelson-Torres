@@ -219,7 +219,7 @@ header("location:../");
 
 									<div class="admin-user-action text-center">
 									
-										<a target="_blank" href="cert" class="btn btn-primary btn-sm btn-inverse">CERTIFICADO DE REGISTRO</a>
+										<a target="_blank" href="cert/index.php" class="btn btn-primary btn-sm btn-inverse">CERTIFICADO DE REGISTRO</a>
 										
 									</div>
 									
