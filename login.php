@@ -43,7 +43,9 @@ include 'constants/check-login.php';
 	<link rel="stylesheet" href="icons/flaticon-ventures/flaticon-ventures.css">
 
 	<link href="css/style.css" rel="stylesheet">
+	
  <script type="text/javascript">
+
    function update(str)
    {
 
@@ -100,7 +102,7 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+							<a href="./"><img src="images/LogoIntGris.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -237,22 +239,37 @@ include 'constants/check-login.php';
 												
                                 <div class="col-sm-12 col-md-12">
 
-                                <div class="form-group"> 
+									<div class="form-group"> 
 
-                                <label style="color: white;">Correo Electrónico</label>
-                                <input class="form-control" placeholder="Ingresa tu Correo Electrónico" name="email" required type="text"> 
-                                </div>
+									<label style="color: white;">Correo Electrónico</label>
+									<input class="form-control" placeholder="Ingresa tu Correo Electrónico" name="email" required type="text"> 
+									</div>
 												
                                  </div>
-												
-                                <div class="col-sm-12 col-md-12">
-												
-                                <div class="form-group"> 
-                                <label style="color: white;" >Contraseña</label>
-                                <input class="form-control" placeholder="Ingresa tu contraseña" name="password" required type="password"> 
-                                </div>
-												
-                                </div>
+								 
+								 <div class="col-sm-12 col-md-12">
+    <div class="form-group"> 
+        <label style="color: white;" >Contraseña</label>
+        <input class="form-control" placeholder="Ingresa tu contraseña" name="password" required type="password" id="password"> 
+    </div>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="showPassword">
+        <label class="form-check-label" for="showPassword" style="color: white;">Mostrar contraseña</label>
+    </div>
+</div>
+
+<script>
+    document.getElementById('showPassword').addEventListener('change', function() {
+        var passwordField = document.getElementById('password');
+        if (this.checked) {
+            passwordField.type = 'text'; // Muestra la contraseña
+        } else {
+            passwordField.type = 'password'; // Oculta la contraseña
+        }
+    });
+</script>
+
 
 
 						

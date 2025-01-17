@@ -13,7 +13,7 @@
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">Acerca EmpleaTec</h5>
+											<h5 class="footer-title text-white">Acerca EmpleaTec</h5>
 											<p>EmpleaTec es tu plataforma integral para la búsqueda de empleo y la gestión de talento.
 											 Diseñada especialmente para conectar a profesionales recién graduados y experimentados con
 											 las mejores oportunidades laborales.</p>
@@ -23,7 +23,7 @@
 									</div>
 									
 									<div class="col-sm-6 col-md-5 mt-30-xs">
-										<h5 class="footer-title">Enlaces Rapidos</h5>
+										<h5 class="footer-title text-white">Enlaces Rapidos</h5>
 										<ul class="footer-menu clearfix">
 											<li><a href="http://eva.intsuperior.edu.ec/">Web Nelson Torres</a></li>
 											<li><a href="http://eva.intsuperior.edu.ec/login/index.php">Aula Virtual (EVA)</a></li>
@@ -40,7 +40,7 @@
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-								<h5 class="footer-title">Contacto</h5>
+								<h5 class="footer-title text-white" >Contacto</h5>
 								
 								<p>3V25+574 via Ayora, Cayambe</p>
 								<p><a href="mailto: secretaria@intsuperior.edu.ec">@Informacion Instituto Nelson Torres</a></p>
@@ -64,14 +64,14 @@
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> <br>Omar Sani <br> Yorman Morillo</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> <br>Omar Alexander Sani <br> Yorman Morillo - Jean De la Cruz</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Desarrollado por <a href="https://www.linkedin.com/in/omar-sani-b9733a2b9"> Sonick Soft. </a></li>
+									<li><a >Desarrollado por <a href="https://www.linkedin.com/in/omar-sani-b9733a2b9"> NexoByte. </a></li>
 								</ul>
 							
 							</div>

@@ -59,7 +59,6 @@ function get_rand_numbers($length) {
     if ($length>0) {
         $rand_id="";
         for($i=1; $i<=$length; $i++) {
-            mt_srand((double)microtime() * 1000000);
             $num = mt_rand(27,36);
             $rand_id .= assign_rand_value($num);
         }

@@ -1,8 +1,10 @@
 <?php
 $opt = $_GET['opt'];
-require '../constants/settings.php';
 require '../constants/db_config.php';
 require '../constants/uniques.php';
+include '../constants/settings.php';
+require '../mail/vendor/autoload.php'; // Asegúrate de que la ruta es correcta
+use PHPMailer\PHPMailer\PHPMailer; 
 
     try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -41,12 +43,14 @@ require '../constants/uniques.php';
 	$stmt->bindParam(':token', $token);
     $stmt->execute();	
 
-	$message = "Hellow!! <b>$full_name</b>, <br>Click <a href='$actual_link'>HERE</a> to reset your <b>BwireJobs</b> password.";   
-    require '../mail/PHPMailerAutoload.php';
+	$message = "Hellow!! <b>$full_name</b>, <br>Click <a href='$actual_link'>HERE</a> to reset your <b>BwireJobs</b> password.";
 
-    $mail = new PHPMailer;
-                          
+    require '../mail/vendor/phpmailer/phpmailer/src/Exception.php';
+    require '../mail/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+    require '../mail/vendor/phpmailer/phpmailer/src/SMTP.php';
+    require '../mail/vendor/autoload.php';
 
+    $mail = new PHPMailer(true);
     $mail->isSMTP();                                      
     $mail->Host = $smtp_host;
     $mail->SMTPAuth = true;                           

@@ -30,7 +30,7 @@ try {
 	}
 	
 	if ($records > 0) {
-	header("location:../register.php?p=$role&r=0927");	
+	header("location:../index.php?p=$role&r=0927");	
 		
 	}else{
 	
@@ -75,7 +75,7 @@ try {
     $stmt->bindParam(':role', $role);
 	$stmt->bindParam(':memberno', $member_no);
     $stmt->execute();
-	header("location:../register.php?p=Employee&r=1123");				  
+	header("location:../index.php?p=Employee&r=1123");				  
 	}catch(PDOException $e)
     {
     header("location:../register.php?p=Employee&r=4568");
@@ -108,7 +108,7 @@ try {
     $stmt->bindParam(':role', $role);
 	$stmt->bindParam(':memberno', $comp_no);
     $stmt->execute();
-	header("location:../register.php?p=Employer&r=1123");				  
+	header("location:../index.php?p=Employer&r=1123");				  
 	}catch(PDOException $e)
     {
     header("location:../register.php?p=Employer&r=4568");

@@ -59,7 +59,7 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+							<a href="./"><img src="images/LogoIntGris.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -241,7 +241,7 @@ include 'constants/check-login.php';
 										<address>3V25,574 via Ayora, Cayambe, <br/>Cayambe - Ecuador <br/> </address>
 								</li>
 								<li>
-										<h5>Correo Electrónico</h5><a href="mailto:info@yavirac.edu.ec">info@intsuperior.edu.ec</a>
+										<h5>Correo Electrónico</h5><a href="mailto:info@intSuperior.edu.ec">info@intsuperior.edu.ec</a>
 								</li>
 								<li>
 										

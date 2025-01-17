@@ -94,7 +94,7 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+							<a href="./"><img src="images/LogoIntGris.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -185,12 +185,15 @@ include 'constants/check-login.php';
 			
 		</header>
 
-		<div class="main-wrapper">
-		
-			<div class="hero" style="background-image:url('images/hero-header/intblanco3.jpg');">
+		<div class="main-wrapper bg-white">
+			<div class="hero" style="background-image:url('images/hero-header/FondoRojo.png');">
 				<div class="container">
 
-					<h1>Bolsa de Empleo Instituto Nelson Torres</h1>
+				<h1 class="fs-1 fw-normal" style="font-family: 'Roboto', sans-serif;">
+					Bolsa de Empleo
+					<span class="text-danger">Instituto Nelson Torres</span>
+				</h1>
+
 					<p>Impulsa tu carrera Descubre tu próximo desafío profesional con EmpleaTec.</p>
 
 					<div class="main-search-form-wrapper">
@@ -277,74 +280,19 @@ include 'constants/check-login.php';
 						</form>
 						
 					</div>
+					<br>
+					<div class="center-container" style="display: flex; justify-content: center;">
+						<a href="https://drive.google.com/file/d/1x8jrq99da1XQHlPo70OMhyAdvaj-FEpM/view?usp=drive_link" class="center-content" style="display: flex; align-items: center; gap: 10px; transition: transform 0.3s ease, opacity 0.3s ease;">
+							<img src="images/qrMovil.png" alt="qr" class="qr-image" style="width: 200px; height: auto; transition: transform 0.3s ease, opacity 0.3s ease;">
+						</a>
+					</div>
 
 				</div>
 				
 			</div>
 
 			
-			<div class="post-hero bg-light">
-			
-				<div class="container">
-
-					<div class="process-item-wrapper mt-20">
-							
-						<div class="row">
-						
-							<div class="col-sm-4">
-								
-								<div class="process-item clearfix">
-									
-									<div class="icon">
-										<i class="flaticon-line-icon-set-magnification-lens"></i>
-									</div>
-									
-									<div class="content">
-										<h5>01 / Buscar empleos</h5>
-									</div>
-									
-								</div>
-								
-							</div>
-							
-							<div class="col-sm-4">
-							
-								<div class="process-item clearfix">
-									
-									<div class="icon">
-										<i class="flaticon-line-icon-set-pencil"></i>
-									</div>
-									
-									<div class="content">
-										<h5>02 / Aplica</h5>
-									</div>
-									
-								</div>
-								
-							</div>
-							
-							<div class="col-sm-4">
-								
-								<div class="process-item clearfix">
-									
-									<div class="icon">
-										<i class="flaticon-line-icon-set-calendar"></i>
-									</div>
-									
-									<div class="content">
-										<h5>03 / Trabaja</h5>
-									</div>
-									
-								</div>
-								
-							</div>
-							
-						</div>
-					
-					</div>
-					
-				</div>
-			
+			<div class="post-hero bg-light">		
 			</div>
 
 

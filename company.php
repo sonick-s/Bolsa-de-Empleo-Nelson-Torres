@@ -127,7 +127,7 @@ $page = 1;
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+							<a href="./"><img src="images/LogoIntGris.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
