@@ -186,7 +186,18 @@ include 'constants/check-login.php';
 		</header>
 
 		<div class="main-wrapper bg-white">
-			<div class="hero" style="background-image:url('images/hero-header/FondoRojo.png');">
+		<?php
+			// Array con las rutas de las imágenes
+			$imagenes = [
+				'images/hero-header/VR.gif',
+				'images/hero-header/Administracion.gif',
+				'images/hero-header/Diseño.gif',
+				'images/hero-header/colibri.gif',
+			];
+			$imagenAleatoria = $imagenes[array_rand($imagenes)];
+			?>
+
+			<div class="hero" style="background-image:url('<?php echo $imagenAleatoria; ?>');">
 				<div class="container">
 
 				<h1 class="fs-1 fw-normal" style="font-family: 'Roboto', sans-serif;">

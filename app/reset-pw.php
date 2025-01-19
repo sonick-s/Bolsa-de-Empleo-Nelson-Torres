@@ -43,7 +43,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 	$stmt->bindParam(':token', $token);
     $stmt->execute();	
 
-	$message = "Hellow!! <b>$full_name</b>, <br>Click <a href='$actual_link'>HERE</a> to reset your <b>BwireJobs</b> password.";
+	$message = "Hellow!! <b>$full_name</b>, <br>Click <a href='$def_link'>HERE</a> to reset your <b>BwireJobs</b> password.";
 
     require '../mail/vendor/phpmailer/phpmailer/src/Exception.php';
     require '../mail/vendor/phpmailer/phpmailer/src/PHPMailer.php';

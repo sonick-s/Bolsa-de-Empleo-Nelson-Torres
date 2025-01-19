@@ -3021,14 +3021,14 @@ body.modal-open,
 .slicknav_btn.slicknav_open:before,
 .slicknav_btn.slicknav_collapsed:before {
     text-decoration: none !important;
-    color: #FFF;
+    color: #9a9a9a;
     border: none;
 }
 
 .slicknav_btn.slicknav_open:before,
 .slicknav_btn.slicknav_collapsed:before {
     font-size: 20px;
-    color: #FFF;
+    color: #9a9a9a;
 }
 
 .slicknav_menutxt {
