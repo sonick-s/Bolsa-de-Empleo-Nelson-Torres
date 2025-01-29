@@ -197,7 +197,7 @@ include 'constants/check-login.php';
 			$imagenAleatoria = $imagenes[array_rand($imagenes)];
 			?>
 
-			<div class="hero" style="background-image:url('<?php echo $imagenAleatoria; ?>');">
+<div class="hero d-flex justify-content-center align-items-center" style="background-image:url('<?php echo $imagenAleatoria; ?>'); height: 100vh; background-size: cover; background-position: center;">
 				<div class="container">
 
 				<h1 class="fs-1 fw-normal" style="font-family: 'Roboto', sans-serif;">
